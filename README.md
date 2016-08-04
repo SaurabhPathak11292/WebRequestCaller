@@ -1,9 +1,12 @@
 # WebRequestCaller
 
-Web Request Caller Library
-
 *Use For Hint a web request.*
 
+Dependency
+==========
+```groovy
+compile 'com.pratik.gondaliya:webrequestcaller:0.0.1'
+```
 
 ### ConnectionClass Listener to get current network quality and bandwidth
 ```java
