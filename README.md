@@ -1,6 +1,6 @@
 # WebRequestCaller
 
-*Use For Hint a web request.*
+*Use For Hit web request.*
 
 Dependency
 ==========
