@@ -32,7 +32,7 @@ public class WebRequest {
     public static final int REQUEST_DELETE = Request.Method.DELETE;
 
 
-/*    private int responseType;
+    private int responseType;
     private String url;
     private int requestType;
 
@@ -179,5 +179,5 @@ public class WebRequest {
             }
         };
         BaseApplication.getInstance().addToRequestQueue(req, request_tag);
-    }*/
+    }
 }

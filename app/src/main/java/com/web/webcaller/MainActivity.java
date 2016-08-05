@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*WebRequest webRequest = new WebRequest("http://jsonplaceholder.typicode.com/posts/1",WebRequest.REQUEST_GET,WebRequest.STRING){
+        WebRequest webRequest = new WebRequest("http://jsonplaceholder.typicode.com/posts/1",WebRequest.REQUEST_GET,WebRequest.STRING){
             @Override
             public void onWebResponse(String response) {
                 try {
@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onWebErrorResponse(String error) {
                 Log.d(TAG,"error : " + error);
             }
-        };*/
-
-        //webRequest.execute();
+        };
+        webRequest.execute();
     }
 }
