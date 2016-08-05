@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 /**
  * Created by pratik on 3/8/16.
  */
-public class WebRequest {
+public abstract class WebRequest {
 
     public static final int STRING = 0;
     public static final int JSON_OBJECT = 1;
@@ -39,12 +39,9 @@ public class WebRequest {
     private Map<String, String> header;
     private Map<String, String> params;
 
-    public void onWebResponse(String reponse) {
+    public abstract void onWebResponse(String reponse);
 
-    }
-    public void onWebErrorResponse(String error){
-
-    }
+    public abstract void onWebErrorResponse(String error);
 
     public WebRequest() {
         header = new HashMap<String, String>();
