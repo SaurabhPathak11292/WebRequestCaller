@@ -8,7 +8,7 @@ Dependency
 compile 'com.pratik.gondaliya:webrequestcaller:0.0.2'
 ```
 
-### ConnectionClass Listener to get current network quality and bandwidth
+### sample code
 ```java
 /*Request params
 param 1 - url 
