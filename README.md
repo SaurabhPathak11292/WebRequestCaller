@@ -17,12 +17,12 @@ param 3 - Response type WebRequest.STRING ,WebRequest.JSON_OBJECT , WebRequesT.J
 */
 WebRequest webRequest = new WebRequest(url,WebRequest.REQUEST_GET,WebRequest.JSON_OBJECT){
     @Override
-    public void onResponse(String response) {
+    public void onWebResponse(String response) {
         Log.d(TAG,response);
     }
 
     @Override
-    public void onErrorResponse(String reponse) {
+    public void onWebErrorResponse(String reponse) {
         Log.d(TAG,"error : " + reponse);
     }
 };

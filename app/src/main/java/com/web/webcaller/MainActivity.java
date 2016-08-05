@@ -3,8 +3,12 @@ package com.web.webcaller;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.web.webrequestcaller.WebRequest;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,19 +17,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        WebRequest webRequest = new WebRequest("http://jsonplaceholder.typicode.com/posts",WebRequest.REQUEST_GET,WebRequest.JSON_OBJECT){
+        /*WebRequest webRequest = new WebRequest("http://jsonplaceholder.typicode.com/posts/1",WebRequest.REQUEST_GET,WebRequest.STRING){
             @Override
-            public void onResponse(String response) {
-                Log.d(TAG,response);
+            public void onWebResponse(String response) {
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    Log.d(TAG,jsonObject.getInt("userId")+"");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
             }
 
             @Override
-            public void onErrorResponse(String reponse) {
-                Log.d(TAG,"error : " + reponse);
+            public void onWebErrorResponse(String error) {
+                Log.d(TAG,"error : " + error);
             }
-        };
+        };*/
 
-        webRequest.execute();
+        //webRequest.execute();
     }
 }

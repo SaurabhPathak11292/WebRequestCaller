@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'WebRequestCaller'
 
+    publishedGroupId = 'com.pratik.gondaliya'
+    libraryName = 'WebRequestCaller'
+    artifact = 'webrequestcaller'
+
+    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+
+    siteUrl = 'https://github.com/pratik-gondaliya/WebRequestCaller'
+    gitUrl = 'https://github.com/pratik-gondaliya/WebRequestCaller.git'
+
+    libraryVersion = '0.0.2'
+
+    developerId = 'pratikt032'
+    developerName = 'Pratik Gondaliya'
+    developerEmail = 'gondaliya.p001@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+tasks.withType(Javadoc).all { enabled = false }
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -25,3 +48,6 @@ dependencies {
 
     compile 'com.android.volley:volley:1.0.0' //Volley Library
 }
+
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'

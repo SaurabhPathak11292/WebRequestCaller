@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WebCaller.iml" filepath="$PROJECT_DIR$/WebCaller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebRequestCaller.iml" filepath="$PROJECT_DIR$/WebRequestCaller.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/webrequestcaller/webrequestcaller.iml" filepath="$PROJECT_DIR$/webrequestcaller/webrequestcaller.iml" />
     </modules>
