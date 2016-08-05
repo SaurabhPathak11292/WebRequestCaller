@@ -27,6 +27,12 @@ WebRequest webRequest = new WebRequest(url,WebRequest.REQUEST_GET,WebRequest.JSO
     }
 };
 
+// You can add parameter by below line
+webRequest.addParams("param-name","param-value");
+
+// You can add header parameter by below line
+webRequest.addHeaderParams("param-name","param-value");
+
 webRequest.execute();
 ```
 
