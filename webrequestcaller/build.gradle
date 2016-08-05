@@ -47,7 +47,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
 
     compile 'com.android.volley:volley:1.0.0' //Volley Library
+    compile 'com.volansys.firstApplication:calculatoroperation:0.0.2'
 }
 
-apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/pratik-gondaliya/WebRequestCaller/master/scripts/generate_pom.gradle'
+apply from: 'https://raw.githubusercontent.com/pratik-gondaliya/WebRequestCaller/master/scripts/generate_arr.gradle'

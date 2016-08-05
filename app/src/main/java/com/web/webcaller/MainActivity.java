@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG,"error : " + error);
             }
         };
+
+        webRequest.addParams("param-name","param-value");
+
+        webRequest.addHeaderParams("param-name","param-value");
+
         webRequest.execute();
     }
 }
