@@ -5,7 +5,7 @@
 Dependency
 ==========
 ```groovy
-compile 'com.pratik.gondaliya:webrequestcaller:0.0.2'
+compile 'com.pratik.gondaliya:webrequestcaller:0.0.3'
 ```
 
 ### sample code

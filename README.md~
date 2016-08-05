@@ -5,10 +5,10 @@
 Dependency
 ==========
 ```groovy
-compile 'com.pratik.gondaliya:webrequestcaller:0.0.1'
+compile 'com.pratik.gondaliya:webrequestcaller:0.0.2'
 ```
 
-### ConnectionClass Listener to get current network quality and bandwidth
+### sample code
 ```java
 /*Request params
 param 1 - url 
@@ -26,6 +26,12 @@ WebRequest webRequest = new WebRequest(url,WebRequest.REQUEST_GET,WebRequest.JSO
         Log.d(TAG,"error : " + reponse);
     }
 };
+
+// You can add parameter by below line
+webRequest.addParams("param-name","param-value");
+
+// You can add header parameter by below line
+webRequest.addHeaderParams("param-name","param-value");
 
 webRequest.execute();
 ```

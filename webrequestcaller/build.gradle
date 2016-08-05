@@ -7,12 +7,12 @@ ext {
     libraryName = 'WebRequestCaller'
     artifact = 'webrequestcaller'
 
-    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+    libraryDescription = 'Added one feature like abstract class Features'
 
     siteUrl = 'https://github.com/pratik-gondaliya/WebRequestCaller'
     gitUrl = 'https://github.com/pratik-gondaliya/WebRequestCaller.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.3'
 
     developerId = 'pratikt032'
     developerName = 'Pratik Gondaliya'
