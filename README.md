@@ -4,6 +4,7 @@
 
 Dependency
 ==========
+*Put below dependency in app's gradle file.*
 ```groovy
 compile 'com.pratik.gondaliya:webrequestcaller:0.0.3'
 ```
